@@ -20,7 +20,7 @@ $ sudo apt-get install imagemagick
 Copy generateGif.sh in your desire directory...
 
 
-Create a cron that fires uo every 10 minutes
+Create a cron that fires up every 10 minutes
 ```sh
 $ sudo crontab -e
 ```
