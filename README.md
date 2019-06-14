@@ -59,6 +59,10 @@ provinces:
 
 ```
 
+### Example
+
+![radar-rain](examples/radar_rain.gif)
+
 
 License
 ----
