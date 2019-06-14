@@ -39,7 +39,7 @@ where:
     -h  show this help text
     -c  set province value (default: Madrid)
     -d  set temporary directory to download images (default: /tmp/img)
-        -o set output full path
+    -o set output full path
 
 provinces:
         am Almería
