@@ -20,13 +20,21 @@ $ sudo apt-get install imagemagick
 Copy generateGif.sh in your desire directory...
 
 
-Create a cron that fires up every 10 minutes
-```sh
-$ sudo crontab -e
+Add this lines to automation.yaml
 ```
+- id: <automation.id>
+  alias: Generate AEMET image
+  trigger:
+  - minutes: /10
+    platform: time_pattern
+  condition: []
+  action:
+  - service: shell_command.aemet_rain_image
+```
+And add a new shell_command to your home assistant
 
 ````
-*/10 * * * * /<install-dir>/generateGif.sh <properties>
+aemet_rain_image: /bin/bash /<installation-dir>/generateGif.sh -o <directory to save image>
 ````
 
 
